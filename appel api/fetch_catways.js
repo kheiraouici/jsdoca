@@ -1,6 +1,6 @@
 async function catways (){
    try {
-    let result = await fetch('http://localhost:3000/catways');
+    let result = await fetch('https://localhost:3000/catways');
     let resultJson = await result.json ();
     let catways = resultJson.data;
     let catwayDom = document.getElementById("catway");
