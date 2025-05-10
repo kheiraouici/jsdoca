@@ -1,6 +1,6 @@
 async function bookings (){
    try {
-    let result = await fetch('https://localhost:3000/bookings');
+    let result = await fetch('http://localhost:3000/bookings');
     let resultJson = await result.json ();
     let bookings = resultJson.data;
     let bookingDom = document.getElementById("booking");

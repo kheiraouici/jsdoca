@@ -1,4 +1,4 @@
-const Catway = require('../models/catway');
+const Catway = require('../models/catways');
 const { body, validationResult } = require('express-validator')
 
 /**

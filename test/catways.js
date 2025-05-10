@@ -4,7 +4,7 @@ const sinon = require('sinon');
 const mongoose = require('mongoose');
 const { body, validationResult } = require('express-validator');
 const catwayController = require('../services/catways'); 
-const Catway = require('../models/catway');
+const Catway = require('../models/catways');
 
 describe('Catway Controller - getAll', () => {
   let req, res, next;

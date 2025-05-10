@@ -4,7 +4,7 @@ const sinon = require('sinon');
 const mongoose = require('mongoose');
 const bookingController = require('../services/booking');
 const Booking = require('../models/booking');
-const Catway = require('../models/catway');
+const Catway = require('../models/catways');
 
 describe('Booking Controller - getAll', function() {
   let req, res, next;
