@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.get('/', function(req, res, next) {
-    res.render('index', { title: 'Port de Russell' });
+    res.render('index', { title: 'Port de plaisance' });
   });
 
 app.use('/', indexRouter);
