@@ -8,7 +8,7 @@ const bookingRoute = require('../routes/booking');
 
 router.use('/users', userRoute);
 router.use('/catways', catwayRoute);
-router.use('/booking', bookingRoute);
+router.use('/catways', bookingRoute);
 
 
 module.exports = router;

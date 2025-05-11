@@ -15,4 +15,6 @@ router.patch('/:id/reservations/:idReservation', private.checkJWT, service.updat
 
 router.delete('/:id/reservations/:idReservation', private.checkJWT, service.delete);
 
+
+
 module.exports = router;
