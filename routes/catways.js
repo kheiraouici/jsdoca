@@ -15,5 +15,4 @@ router.patch('/:id', private.checkJWT, service.update);
 
 router.delete('/:id', private.checkJWT, service.delete);
 
-
 module.exports = router;
