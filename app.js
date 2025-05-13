@@ -13,6 +13,9 @@ var app = express();
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'public'));
+app.use('/uploads', express.static(path.join(__dirname,'upload')));
+
+
 
 app.use(cors({
     exposedHeaders: ['Authorization'],
