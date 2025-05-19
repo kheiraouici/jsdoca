@@ -11,7 +11,7 @@ mongodb.initClientDbConnection();
 
 var app = express();
 
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'public'));
 app.use('/uploads', express.static(path.join(__dirname,'upload')));
 
@@ -32,7 +32,8 @@ app.get('/', function(req, res, next) {
 
 app.use('/', indexRouter);
 
-app.use('/docs', express.static(path.join(__dirname, 'docs')));
+
+app.use('/doc', express.static(path.join(__dirname, 'doc')));
 
 app.use(function(req, res, next) {
     res.status(404).json({name:'API', version: '1.0', status: 404, message: 'not_found'});
