@@ -6,7 +6,7 @@
     "start": "npm test && env-cmd -f ./env/.env nodemon ./bin/www",
     "dev": "env-cmd -f ./env/.env.dev nodemon ./bin/www",
     "prod": "env-cmd -f ./env/.env.prod nodemon ./bin/www",
-    "doc": "jsdoc -c jsdoc.json",
+     "docs": "jsdoc -c jsdoc.json",
     "test": "mocha"
   },
   "author": "",
